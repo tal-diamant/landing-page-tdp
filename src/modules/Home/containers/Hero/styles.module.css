@@ -1,0 +1,127 @@
+.hero {
+    padding: 100px 0 0;
+    background: #e0eaf3;
+}
+
+.center {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.heading {
+    font-size: 36px;
+    line-height: 46px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px;
+}
+
+.listItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.actionButton {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.actionButtonLink {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 24px;
+    background: var(--primary-button-color);
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all .15s ease-in-out;
+}
+
+.actionButtonLink:hover {
+    background: var(--secondary-button-color);
+}
+
+.people {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.peopleAnimation {
+    animation: shaffle .6s ease-out;
+    animation-delay: .35s;
+    animation-fill-mode: forwards;
+    transform: translateY(100%);
+}
+
+@keyframes shaffle {
+    100% {
+        webkit-transform: translateY(17%);
+        transform: translateY(17%);
+    }
+}
+
+.mobileHide {
+    display: none;
+}
+
+@media only screen and (min-width: 820px) {
+    /* For desktop: */
+    .hero {
+        padding: 180px 0 0;
+    }
+
+    .heading {
+        font-size: 52px;
+        line-height: 68px;
+        margin:0 auto 40px;
+        font-weight: bold;
+        max-width: 930px;
+        text-align: center;
+    }
+
+    .list {
+        flex-direction: row;
+        gap: 40px;
+        margin: 0 0 50px;
+    }
+
+    .actionButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .actionButtonLink {
+        padding: 24px 45px;
+    }
+
+    .people {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+    }
+
+    .mobileHide {
+        display: initial;
+    }
+  }
