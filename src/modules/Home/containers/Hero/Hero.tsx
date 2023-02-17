@@ -5,17 +5,6 @@ import styles from "./styles.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const peepImageSize = {
-  small: {
-    width: 134,
-    height: 180,
-  },
-  big: {
-    width: 190,
-    height: 257,
-  },
-};
-
 export default function Hero() {
   return (
     <>
