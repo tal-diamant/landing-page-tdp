@@ -4,6 +4,7 @@ import Features from "@/modules/Home/containers/Features/Features";
 import Process from "./containers/Process/Process";
 import Info from "./containers/Info/Info";
 import Testimonials from "./containers/Testimonials/Testimonials"
+import Fit from "./containers/Fit/Fit";
 
 export default function Home() {
   return (
@@ -15,8 +16,8 @@ export default function Home() {
       <Features />
       <Process />
       <Info />
-      <Testimonials /> {/* <-- */}
-      {/* fit */}
+      <Testimonials />
+      <Fit /> {/* <-- */}
       {/* faq */}
       {/* cta */}
 
