@@ -13,6 +13,7 @@
 .testimony {
     max-width: 300px;
     margin: 0 auto;
+    position: relative;
 }
 
 .text {
@@ -82,5 +83,18 @@
 
 @media only screen and (min-width: 1140px) {
     /* For desktop: */
-    
+    .testimony {
+        max-width: 900px;
+    }
+
+    .text {
+        font-size: 40px;
+        line-height: 48px;
+        margin: 0 0 47px;
+    }
+
+    .profileInfo h5 {
+        font-size: 24px;
+        line-height: 29px;
+    }
 }

@@ -108,6 +108,10 @@
 
 @media only screen and (min-width: 1140px) {
     /* For desktop: */
+    .info {
+        padding: 100px 0 45px;
+    }
+    
     .heading {
         font-size: 40px;
         line-height: 58px;
