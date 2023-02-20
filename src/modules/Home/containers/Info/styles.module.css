@@ -1,0 +1,179 @@
+.info {
+    padding: 80px 0 0;
+    background: #231f20;
+    position: relative;
+}
+
+.center {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.heading {
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    line-height: 38px;
+    max-width: 985px;
+    margin: 0 auto 92px;
+}
+
+.infoGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 -20px;
+}
+
+.gridItem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 400px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.gridItem:hover .card{
+    opacity: 1;
+}
+
+.card1 {
+    background-color: #91CFD2;
+}
+
+.card2 {
+    background-color: #e0eaf3;
+}
+
+.card3 {
+    background-color: #f86642;
+}
+
+.card {
+    background: #231f20;
+    padding: 30px 18px;
+    position: relative;
+    /* z-index: 2; */
+}
+
+.cardRight {
+    margin-left: auto;
+}
+
+.cardSubheading {
+    display: inline-block;
+    background: #fff;
+    color: var(--primary-text-color);
+    font-family: Roboto,sans-serif;
+    font-size: 16.5291px;
+    font-weight: bold;
+    line-height: 19px;
+    margin: 0 0 20px;
+    padding: 10px;
+}
+
+.cardHeading {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+    margin: 0 0 20px;
+    max-width: 330px;
+}
+
+.cardLink {
+    display: none;
+}
+
+.cardLink svg {
+    margin-left: 8.26px;
+}
+
+.imageSmall {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.imageSmall2 {
+    right: auto;
+    left: 20px;
+}
+
+.image {
+    display: none;
+    transition: all .3s ease-out;
+}
+
+@media only screen and (min-width: 1140px) {
+    /* For desktop: */
+    .heading {
+        font-size: 40px;
+        line-height: 58px;
+    }
+
+    .infoGrid {
+        gap: 70px;
+        margin: 0;
+    }
+
+    .gridItem {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 637px auto;
+        height: 562px;
+        padding: 0;
+    }
+
+    .gridItem:hover .image{
+        translate: 80% 0;
+    }
+
+    .gridItem:hover .image2{
+        translate: -80% 0;
+    }
+
+    .card {
+        max-width: 637px;
+        opacity: 0;
+        padding: 30px 60px;
+        position: absolute;
+        left: 42px;
+        right: auto;
+        top: 20%;
+        transition: all .3s ease-out;
+        /* z-index: 2; */
+    }
+
+    .cardRight {
+        left: auto;
+        right: 42px;
+    }
+
+    .cardHeading {
+        font-size: 31px;
+        line-height: 46px;
+        margin: 0 0 35px;
+        max-width: none;
+    }
+
+    .cardLink {
+        display: inline-block;
+        background: transparent;
+        border: 2px solid #fff;
+        color: #fff;
+        font-weight: bold;
+        padding: 20px 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .imageSmall {
+        display: none;
+    }
+
+    .image {
+        display: block;
+    }
+}

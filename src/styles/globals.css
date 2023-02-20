@@ -4,6 +4,7 @@
   font-family: 'Inter', sans-serif;
   /* font-family: Interstate-bold, Bau-Regular; */
 
+  --primary-text-color: #f86642;
   --primary-button-color: #ff734f;
   --secondary-button-color: #000;
 }
