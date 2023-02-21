@@ -37,4 +37,12 @@
         flex-direction: row;
         justify-content: space-between;
     }
+
+    .img {
+        transition: scale 0.15s ease-in-out;
+    }
+
+    .img:hover {
+        scale: 1.2;
+    }
 }

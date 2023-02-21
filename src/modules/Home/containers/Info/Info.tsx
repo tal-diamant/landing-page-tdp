@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import AnimateIn from "@/components/AnimateIn/AnimateIn";
 import styles from "./styles.module.css";
 
 export default function Info() {
@@ -7,9 +8,11 @@ export default function Info() {
     <>
       <section className={styles.info}>
         <div className={styles.center}>
+          <AnimateIn>
           <h3 className={styles.heading}>
             How accessible UX design is changing the businesses for the better
           </h3>
+          </AnimateIn>
 
           <div className={styles.infoGrid}>
             {/* 1 */}

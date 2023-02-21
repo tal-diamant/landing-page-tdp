@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import AnimateIn from "@/components/AnimateIn/AnimateIn";
 import styles from "./styles.module.css";
 
 export default function Process() {
@@ -7,9 +8,12 @@ export default function Process() {
     <>
       <section className={styles.process}>
         <div className={styles.center}>
+          <AnimateIn>
           <h3 className={styles.heading}>
             How signing up with The Design Project works
           </h3>
+          </AnimateIn>
+          <AnimateIn>
           <p className={styles.support}>
             Take a minute to imagine how you’d feel watching your user count
             grow, and retention rates stay consistently high. When you
@@ -18,7 +22,10 @@ export default function Process() {
             blends UX, UI, and Product design into a deliciously smooth process
             that fuels productivity and success.
           </p>
+          </AnimateIn>
+
           <div className={styles.articles}>
+            <AnimateIn>
             <article className={styles.article}>
               <h3 className={styles.articleNumber}>01</h3>
               <h4 className={styles.articleHeading}>
@@ -29,11 +36,14 @@ export default function Process() {
                 a variety of options to fit your unique needs.
               </p>
               <div className={styles.imageContainer}>
-                {/* <Image src={} width={} height={} alt=""/> */}
-                <div className={styles.image}></div>
+                <div className={styles.image}>
+                  <Image src={"/images/monitor.svg"} width={189} height={168} alt=""/>
+                </div>
               </div>
             </article>
+            </AnimateIn>
 
+            <AnimateIn>
             <article className={styles.article}>
               <h3 className={styles.articleNumber}>02</h3>
               <h4 className={styles.articleHeading}>Meet your perfect match</h4>
@@ -42,10 +52,14 @@ export default function Process() {
                 Then we schedule a call to learn about your startup.
               </p>
               <div className={styles.imageContainer}>
-                <div className={styles.image}></div>
+                <div className={styles.image}>
+                  <Image src={"/images/laptop-girl.svg"} width={222} height={162} alt=""/>
+                </div>
               </div>
             </article>
+            </AnimateIn>
 
+            <AnimateIn>
             <article className={styles.article}>
               <h3 className={styles.articleNumber}>03</h3>
               <h4 className={styles.articleHeading}>
@@ -56,9 +70,12 @@ export default function Process() {
                 your users want, and delivers impactful design iterations.
               </p>
               <div className={styles.imageContainer}>
-                <div className={styles.image}></div>
+                <div className={styles.image}>
+                  <Image src={"/images/laptop-avatars.svg"} width={227} height={166} alt=""/>
+                </div>
               </div>
             </article>
+            </AnimateIn>
           </div>
         </div>
       </section>

@@ -67,15 +67,13 @@
 }
 
 .imageContainer {
-    width: 190px;
-    height: 194px;
+    /* width: 190px; */
+    /* height: 194px; */
 }
 
 .image {
-    width: 181px;
-    height: 163px;
+    text-align: center;
     margin: 0 auto;
-    background-color: #f6f6f6;
     animation: scale-up 1.2s ease-in infinite alternate;
 }
 
@@ -128,10 +126,5 @@
         order: 3;
         width: 234px;
         height: 194px;
-    }
-    
-    .image {
-        width: 230px;
-        height: 167px;
     }
 }

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Inter } from "@next/font/google";
+import AnimateIn from "@/components/AnimateIn/AnimateIn";
 import styles from "./styles.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -10,12 +11,15 @@ export default function Hero() {
     <>
       <section className={styles.hero}>
         <div className={styles.center}>
+        <AnimateIn>
           <h1 className={styles.heading}>
             A UI/UX design subscription so good it should come with a warning
             label
           </h1>
+          </AnimateIn>
 
           <ul className={styles.list}>
+          <AnimateIn>
             <li className={styles.listItem}>
               <Image
                 src={"/images/checkmark-icon.png"}
@@ -25,6 +29,8 @@ export default function Hero() {
               />
               No hiring headaches
             </li>
+            </AnimateIn>
+            <AnimateIn>
             <li className={styles.listItem}>
               <Image
                 src={"/images/checkmark-icon.png"}
@@ -34,6 +40,8 @@ export default function Hero() {
               />
               Weekly turnaround times
             </li>
+            </AnimateIn>
+            <AnimateIn>
             <li className={styles.listItem}>
               <Image
                 src={"/images/checkmark-icon.png"}
@@ -43,8 +51,10 @@ export default function Hero() {
               />
               One flat monthly rate
             </li>
+            </AnimateIn>
           </ul>
 
+          <AnimateIn>
           <div className={styles.actionButton}>
             <Link href="#" className={styles.actionButtonLink}>
               START YOUR RISK-FREE TRIAL
@@ -56,6 +66,7 @@ export default function Hero() {
               />
             </Link>
           </div>
+          </AnimateIn>
 
           <ul className={styles.people}>
             <li className={styles.peopleAnimation}>

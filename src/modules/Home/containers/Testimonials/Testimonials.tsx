@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import AnimateIn from "@/components/AnimateIn/AnimateIn";
 import styles from "./styles.module.css";
 
 export default function Testimonials() {
@@ -7,6 +8,7 @@ export default function Testimonials() {
     <>
       <section className={styles.testimonials}>
         <div className={styles.center}>
+          <AnimateIn>
           <article className={styles.testimony}>
             <h4 className={styles.text}>
               TDP helped identify the main pain points and designed a new UX
@@ -29,12 +31,15 @@ export default function Testimonials() {
               </div>
             </div>
           </article>
+          </AnimateIn>
+          <AnimateIn>
           <div className={styles.button}>
             <Link href="">
                 See our Case Studies
                 <Image src={"/images/arrow-right-icon.png"} width={20} height={16} alt="" />
             </Link>
           </div>
+          </AnimateIn>
         </div>
       </section>
     </>
