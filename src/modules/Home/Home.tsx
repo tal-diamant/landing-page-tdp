@@ -11,7 +11,7 @@ import CTA from "./containers/CTA/CTA";
 export default function Home() {
   return (
     <>
-      {/* header */}
+      {/* header */} {/* <-- */}
 
       <Hero />
       <Customers />
@@ -22,8 +22,6 @@ export default function Home() {
       <Fit />
       <FAQ />
       <CTA />
-
-      {/* footer */} {/* <-- */}
     </>
   );
 }
