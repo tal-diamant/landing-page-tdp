@@ -1,6 +1,6 @@
-import { ReactNode } from 'react';
-import Footer from '../Footer/Footer';
-import Header from '../Header/Header';
+import { ReactNode } from "react";
+import Footer from "../Footer/Footer";
+import Header from "../Header/Header";
 
 interface Props {
   children: ReactNode;
@@ -13,7 +13,7 @@ function Layout({ children }: Props) {
       {children}
       <Footer />
     </div>
-  )
+  );
 }
 
 export default Layout;

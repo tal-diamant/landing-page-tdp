@@ -34,24 +34,26 @@ export default function Header() {
               />
             </div>
             <nav className={styles.nav}>
-                <ul>
-                    <li>
-                        <Link href="">How it works</Link>
-                    </li>
-                    <li>
-                        <Link href="">About</Link>
-                    </li>
-                    <li>
-                        <Link href="">Work</Link>
-                    </li>
-                    <li>
-                        <Link href="">Pricing</Link>
-                    </li>
-                    <li>
-                        <Link href="">Blog</Link>
-                    </li>
-                </ul>
-                <Link href="" className={styles.navAction}>Get started</Link>
+              <ul>
+                <li>
+                  <Link href="">How it works</Link>
+                </li>
+                <li>
+                  <Link href="">About</Link>
+                </li>
+                <li>
+                  <Link href="">Work</Link>
+                </li>
+                <li>
+                  <Link href="">Pricing</Link>
+                </li>
+                <li>
+                  <Link href="">Blog</Link>
+                </li>
+              </ul>
+              <Link href="" className={styles.navAction}>
+                Get started
+              </Link>
             </nav>
           </div>
         </div>
