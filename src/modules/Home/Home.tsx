@@ -6,6 +6,7 @@ import Info from "./containers/Info/Info";
 import Testimonials from "./containers/Testimonials/Testimonials"
 import Fit from "./containers/Fit/Fit";
 import FAQ from "./containers/FAQ/FAQ";
+import CTA from "./containers/CTA/CTA";
 
 export default function Home() {
   return (
@@ -19,10 +20,10 @@ export default function Home() {
       <Info />
       <Testimonials />
       <Fit />
-      <FAQ /> {/* <-- */}
-      {/* cta */}
+      <FAQ />
+      <CTA />
 
-      {/* footer */}
+      {/* footer */} {/* <-- */}
     </>
   );
 }
