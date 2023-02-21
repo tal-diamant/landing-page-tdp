@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Inter } from "@next/font/google";
 import AnimateIn from "@/components/AnimateIn/AnimateIn";
 import styles from "./styles.module.css";
 
@@ -10,6 +9,7 @@ export default function Footer() {
       <section className={styles.footer}>
         <div className={styles.center}>
           <div className={styles.leftColumn}>
+            <AnimateIn>
             <div className={styles.footerLogo}>
               <Image
                 className={styles.logoMobile}
@@ -26,6 +26,9 @@ export default function Footer() {
                 alt=""
               />
             </div>
+            </AnimateIn>
+
+            <AnimateIn>
             <div className={styles.footerSocial}>
               <ul>
                 <li>
@@ -63,6 +66,9 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
+            </AnimateIn>
+
+            <AnimateIn>
             <div className={styles.footerCTA}>
               <Link href="">
                 <span>contact us</span>
@@ -74,8 +80,12 @@ export default function Footer() {
                 />
               </Link>
             </div>
+            </AnimateIn>
           </div>
+
+
           <div className={styles.rightColumn}>
+            <AnimateIn>
             <ul>
               <li>
                 <Link href="">How it works</Link>
@@ -93,6 +103,9 @@ export default function Footer() {
                 <Link href="">Contact us</Link>
               </li>
             </ul>
+            </AnimateIn>
+
+            <AnimateIn>
             <div className={styles.mobileCTA}>
               <Link href="">
                 <span>contact us</span>
@@ -104,11 +117,15 @@ export default function Footer() {
                 />
               </Link>
             </div>
+            </AnimateIn>
           </div>
         </div>
+
+        <AnimateIn>
         <div className={styles.bottom}>
           <p> © 2022 The Landing Page Project</p>
         </div>
+        </AnimateIn>
       </section>
     </>
   );
