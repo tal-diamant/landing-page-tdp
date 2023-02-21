@@ -35,11 +35,8 @@
 }
 
 .svg {
-    width: 150px;
-    height: 110px;
-    background: black;
+    text-align: center;
     margin: 0 auto 20px;
-
 }
 
 .subHeading {

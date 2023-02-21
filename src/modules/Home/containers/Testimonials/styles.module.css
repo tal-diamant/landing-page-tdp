@@ -10,10 +10,28 @@
     padding: 0 20px;
 }
 
+.testimoniesWrapper {
+    min-width: 280px;
+    max-width: 300px;
+    overflow-x: scroll;
+    margin: 0 auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+.testimonies {
+    display: flex;
+    gap: 100px;
+    width: calc(100% * 3);
+}
+
 .testimony {
+    min-width: 280px;
     max-width: 300px;
     margin: 0 auto;
     position: relative;
+    scroll-snap-align: center;
 }
 
 .text {
@@ -52,6 +70,32 @@
     line-height: 19px;
 }
 
+.testimonyButton {
+    background: #c8c8c833;
+    padding: 5px 10px;
+    border-radius: 50%;
+    border: none;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    cursor: pointer;
+}
+
+.testimonyButton:disabled {
+    background: #c8c8c812;
+    color: rgb(144, 144, 144);
+}
+
+.testimonyBtnLeft {
+    top: 20%;
+    left: 20px;
+}
+
+.testimonyBtnRight {
+    top: 20%;
+    right: 20px;
+}
+
 .button {
     margin: 60px auto 0;
     text-align: center;
@@ -83,6 +127,10 @@
 
 @media only screen and (min-width: 1140px) {
     /* For desktop: */
+    .testimoniesWrapper {
+        max-width: 900px;
+    }
+
     .testimony {
         max-width: 900px;
     }
@@ -98,3 +146,17 @@
         line-height: 29px;
     }
 }
+
+/* remove scroll bar from testimonies */
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.testimoniesWrapper::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.testimoniesWrapper {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    -webkit-overflow-scrolling: touch;
+} 

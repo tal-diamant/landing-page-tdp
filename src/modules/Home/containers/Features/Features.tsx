@@ -23,7 +23,9 @@ export default function Features() {
           </AnimateIn>
           <div className={styles.featuresCol}>
             <AnimateIn>
-            <div className={styles.svg}></div>
+            <div className={styles.svg}>
+              <Image src={"/images/feature2.svg"} width={150} height={130} alt="" />
+            </div>
             <h4 className={styles.subHeading}>Costs 70% less</h4>
             <p className={styles.support}>
               We developed highly-optimized design processes to let us work fast
@@ -32,7 +34,9 @@ export default function Features() {
             </AnimateIn>
 
             <AnimateIn>
-            <div className={styles.svg}></div>
+            <div className={styles.svg}>
+              <Image src={"/images/feature.svg"} width={150} height={130} alt="" />
+            </div>
             <h4 className={styles.subHeading}>Adaptable and scalable</h4>
             <p className={styles.support}>
               High-velocity is crucial to a startup’s success, and that’s why
@@ -41,7 +45,9 @@ export default function Features() {
             </AnimateIn>
 
             <AnimateIn>
-            <div className={styles.svg}></div>
+            <div className={styles.svg}>
+              <Image src={"/images/feature3.svg"} width={150} height={130} alt="" />
+            </div>
             <h4 className={styles.subHeading}>Fast turnaround times</h4>
             <p className={styles.support}>
               TDP was built for flexibility—we quickly adapt and grow as you

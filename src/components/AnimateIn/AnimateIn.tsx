@@ -12,7 +12,6 @@ export default function AnimateIn({ children }: Props) {
 
   useEffect(() => {
     if(onScreen){
-        console.log(onScreen);
         setSeen(true);
     }
   },[onScreen]);
