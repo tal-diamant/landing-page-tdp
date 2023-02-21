@@ -1,0 +1,51 @@
+.faqItem {
+    border-bottom: 1px solid #000;
+    margin: 0 0 30px;
+    padding: 0 0 25px;
+}
+
+.QuestionAndArrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.question {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.answer {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    padding: 15px 0 0;
+    text-align: left;
+    margin-top: -400px;
+    transition: all .2s;
+}
+
+.answerVisible {
+    margin: 0;
+}
+
+.answerWrapper {
+    overflow: hidden;
+}
+
+.arrow {
+    transition: rotate 0.2s;
+}
+
+.arrowUp {
+    rotate: 180deg;
+}
+
+@media only screen and (min-width: 1140px) {
+    /* For desktop: */
+    .question {
+        font-size: 24px;
+        line-height: 36px;
+    }
+}

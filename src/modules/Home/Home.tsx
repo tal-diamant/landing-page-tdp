@@ -5,6 +5,7 @@ import Process from "./containers/Process/Process";
 import Info from "./containers/Info/Info";
 import Testimonials from "./containers/Testimonials/Testimonials"
 import Fit from "./containers/Fit/Fit";
+import FAQ from "./containers/FAQ/FAQ";
 
 export default function Home() {
   return (
@@ -17,8 +18,8 @@ export default function Home() {
       <Process />
       <Info />
       <Testimonials />
-      <Fit /> {/* <-- */}
-      {/* faq */}
+      <Fit />
+      <FAQ /> {/* <-- */}
       {/* cta */}
 
       {/* footer */}
