@@ -1,102 +1,84 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRef, useState } from "react";
+import SlickSlider from "react-slick";
 import AnimateIn from "@/components/AnimateIn/AnimateIn";
+import { testimonies } from "./data/testimonies";
+import Testimony from "./components/Testimony/Testimony";
+import Slider from "./components/Slider/Slider";
 import styles from "./styles.module.css";
 
 export default function Testimonials() {
+  const slider = useRef<SlickSlider | null>(null)
+  const [isOnEdge, setIsOnEdge] = useState(0);
+
   return (
     <>
       <section className={styles.testimonials}>
         <div className={styles.center}>
-          <div className={styles.testimoniesWrapper}>
-            <div className={styles.testimonies}>
-            <AnimateIn>
-            <article id="1" className={styles.testimony}>
-              <h4 className={styles.text}>
-                TDP helped identify the main pain points and designed a new UX
-                that is accessible and easy to understand. The redesign pushed us
-                forward on our mission to be able to verify 100% of IDs in
-                real-time, and we raised over $100M in funding.
-              </h4>
-              <div className={styles.profile}>
-                <div className={styles.profileImage}>
-                  <Image
-                    src={"/images/testimony1.png"}
-                    width={74}
-                    height={74}
-                    alt=""
-                  />
-                </div>
-                <div className={styles.profileInfo}>
-                  <h5>Erick Desoto</h5>
-                  <h6>VP of Product at Socure</h6>
-                </div>
+          <AnimateIn>
+          <Slider sliderRef={slider} onEdge={setIsOnEdge}>
+            {testimonies.map((testimony) => (
+              <div key={testimony.id}>
+              <Testimony  {...testimony} />
               </div>
-            </article>
-            </AnimateIn>
+            ))}
+          </Slider>
+          </AnimateIn>
 
-            <AnimateIn>
-            <article id="2" className={styles.testimony}>
-              <h4 className={styles.text}>
-                TDP helped identify the main pain points and designed a new UX
-                that is accessible and easy to understand. The redesign pushed us
-                forward on our mission to be able to verify 100% of IDs in
-                real-time, and we raised over $100M in funding.
-              </h4>
-              <div className={styles.profile}>
-                <div className={styles.profileImage}>
-                  <Image
-                    src={"/images/testimony1.png"}
-                    width={74}
-                    height={74}
-                    alt=""
-                  />
-                </div>
-                <div className={styles.profileInfo}>
-                  <h5>Erick Desoto</h5>
-                  <h6>VP of Product at Socure</h6>
-                </div>
-              </div>
-            </article>
-            </AnimateIn>
-
-            <AnimateIn>
-            <article id="3" className={styles.testimony}>
-              <h4 className={styles.text}>
-                TDP helped identify the main pain points and designed a new UX
-                that is accessible and easy to understand. The redesign pushed us
-                forward on our mission to be able to verify 100% of IDs in
-                real-time, and we raised over $100M in funding.
-              </h4>
-              <div className={styles.profile}>
-                <div className={styles.profileImage}>
-                  <Image
-                    src={"/images/testimony1.png"}
-                    width={74}
-                    height={74}
-                    alt=""
-                  />
-                </div>
-                <div className={styles.profileInfo}>
-                  <h5>Erick Desoto</h5>
-                  <h6>VP of Product at Socure</h6>
-                </div>
-              </div>
-            </article>
-            </AnimateIn>
-            </div>
-          </div>
-          
-          <button id="sliderLeft" className={`${styles.testimonyButton} ${styles.testimonyBtnLeft}`}>{'<'}</button>
-          <button id="sliderRight" className={`${styles.testimonyButton} ${styles.testimonyBtnRight}`}>{'>'}</button>
+          <button
+            className={`${styles.testimonyButton} ${styles.testimonyBtnLeft}`}
+            onClick={() => slider?.current?.slickPrev()}
+            style={{opacity: isOnEdge === 0 ?0.3: 1}}
+          >
+            <Image
+              src={"/images/chevron-left.svg"}
+              className={styles.mobileChveron}
+              width={8}
+              height={16}
+              alt=""
+            />
+            <Image
+              src={"/images/chevron-left.svg"}
+              className={styles.desktopChveron}
+              width={27}
+              height={44}
+              alt=""
+            />
+          </button>
+          <button
+            className={`${styles.testimonyButton} ${styles.testimonyBtnRight}`}
+            onClick={() => slider?.current?.slickNext()}
+            style={{opacity: isOnEdge === 2 ?0.3: 1}}
+          >
+            <Image
+              src={"/images/chevron-right.svg"}
+              className={styles.mobileChveron}
+              width={8}
+              height={16}
+              alt=""
+            />
+            <Image
+              src={"/images/chevron-right.svg"}
+              className={styles.desktopChveron}
+              width={27}
+              height={44}
+              alt=""
+            />
+          </button>
 
           <AnimateIn>
-          <div className={styles.button}>
-            <Link href="">
+            <div className={styles.button}>
+              <Link href="">
                 See our Case Studies
-                <Image src={"/images/arrow-right-icon.png"} width={20} height={16} alt="" />
-            </Link>
-          </div>
+                <Image
+                  src={"/images/arrow-right-icon.png"}
+                  width={20}
+                  height={16}
+                  alt=""
+                />
+              </Link>
+            </div>
           </AnimateIn>
         </div>
       </section>

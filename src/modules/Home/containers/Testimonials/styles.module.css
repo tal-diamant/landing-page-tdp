@@ -26,54 +26,10 @@
     width: calc(100% * 3);
 }
 
-.testimony {
-    min-width: 280px;
-    max-width: 300px;
-    margin: 0 auto;
-    position: relative;
-    scroll-snap-align: center;
-}
-
-.text {
-    font-size: 24px;
-    line-height: 33px;
-    margin: 0 0 24px;
-    color: #fff;
-    font-weight: bold;
-    text-align: center;
-}
-
-.profile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.profileImage {
-    margin-right: 24px;
-}
-
-.profileInfo h5 {
-    font-size: 20px;
-    line-height: 24px;
-    color: #fff;
-    font-weight: bold;
-    margin: 0 0 12px;
-    text-transform: uppercase;
-}
-
-.profileInfo h6 {
-    color: #fff;
-    font-family: Roboto,sans-serif;
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 19px;
-}
-
 .testimonyButton {
-    background: #c8c8c833;
-    padding: 5px 10px;
-    border-radius: 50%;
+    display: flex;
+    background: none;
+    padding: 8px;
     border: none;
     font-size: 30px;
     color: white;
@@ -94,6 +50,10 @@
 .testimonyBtnRight {
     top: 20%;
     right: 20px;
+}
+
+.desktopChveron {
+    display: none;
 }
 
 .button {
@@ -144,6 +104,14 @@
     .profileInfo h5 {
         font-size: 24px;
         line-height: 29px;
+    }
+
+    .mobileChveron {
+        display: none;
+    }
+    
+    .desktopChveron {
+        display: inline;
     }
 }
 
