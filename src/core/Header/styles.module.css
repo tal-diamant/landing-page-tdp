@@ -9,6 +9,11 @@
     z-index: 9999;
 }
 
+.onTop {
+    background: transparent;
+    backdrop-filter: none;
+}
+
 .center {
     max-width: 1200px;
     margin: 0 auto;

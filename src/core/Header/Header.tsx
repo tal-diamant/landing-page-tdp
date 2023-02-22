@@ -1,14 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
-import AnimateIn from "@/components/AnimateIn/AnimateIn";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import { useElementOnScreen } from "@/hooks/useElementOnScreen/useElementOnScreen";
 import styles from "./styles.module.css";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const isOnTopDetector = useRef<HTMLDivElement>(null);
+  const isOnScreen = useElementOnScreen(isOnTopDetector);
   return (
     <>
-      <section className={styles.header}>
+      <div ref={isOnTopDetector}></div>
+      <section className={`${styles.header} ${isOnScreen? styles.onTop: ''}`}>
         <div className={styles.center}>
           <div className={styles.top}>
             <Link href="">
