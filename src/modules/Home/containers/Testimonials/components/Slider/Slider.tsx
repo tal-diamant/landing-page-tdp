@@ -13,7 +13,7 @@ export default function Slider({ children, sliderRef, onEdge }: Props) {
     dots: false,
     arrows: false,
     infinite: false,
-    speed: 500,
+    speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
     afterChange: (newIndex: number) => {

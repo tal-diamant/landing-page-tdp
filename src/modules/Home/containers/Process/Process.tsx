@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Parallax } from "react-scroll-parallax";
 import AnimateIn from "@/components/AnimateIn/AnimateIn";
 import styles from "./styles.module.css";
 
@@ -7,6 +8,21 @@ export default function Process() {
   return (
     <>
       <section className={styles.process}>
+        <Parallax translateY={['-138px', '70px']}>
+          <div style={{position: "absolute", top: 0, left: 60}}>
+            <Image src={"/images/dots.png"} width={183} height={110} alt="" />
+          </div>
+        </Parallax>
+        <Parallax translateY={['60px', '-200px']}>
+          <div style={{position: "absolute", top: 60, left: 0}}>
+            <Image src={"/images/wave.png"} width={199} height={116} alt="" />
+          </div>
+        </Parallax>
+        <Parallax translateY={['20px', '200px']}>
+          <div style={{position: "absolute", top: 0, right: 0}}>
+            <Image src={"/images/small-grid.png"} width={269} height={277} alt="" />
+          </div>
+        </Parallax>
         <div className={styles.center}>
           <AnimateIn>
           <h3 className={styles.heading}>

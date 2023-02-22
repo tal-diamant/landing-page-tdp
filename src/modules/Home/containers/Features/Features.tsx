@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Parallax } from 'react-scroll-parallax';
 import AnimateIn from "@/components/AnimateIn/AnimateIn";
 import styles from "./styles.module.css";
 
@@ -7,6 +8,21 @@ export default function Features() {
   return (
     <>
       <section className={styles.features}>
+        <Parallax translateY={['100px', '-200px']}>
+        <div style={{position: "absolute", top: 20, left: 20}}>
+          <Image src={"/images/triangles.png"} width={60} height={59} alt="" />
+        </div>
+        </Parallax>
+        <Parallax speed={-13}>
+        <div style={{position: "absolute", top: 20, right: 20}}>
+          <Image src={"/images/right-angle.png"} width={46} height={43} alt="" />
+        </div>
+        </Parallax>
+        <Parallax translateY={['110px', '255px']}>
+        <div style={{position: "absolute", bottom: -40, right: 0}}>
+          <Image src={"/images/square.png"} width={97} height={108} alt="" />
+        </div>
+        </Parallax>
         <div className={styles.center}>
           <AnimateIn>
           <h3 className={styles.heading}>
