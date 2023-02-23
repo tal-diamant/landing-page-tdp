@@ -1,0 +1,57 @@
+.customers {
+    align-items: center;
+    background-color: #292526;
+    display: flex;
+    flex-direction: column;
+    padding: 77px 0 64px;
+    position: relative;
+    z-index: 2;
+}
+
+.center {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.heading {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 38px;
+    margin: 0 0 60px;
+    text-align: center;
+    color: white;
+}
+
+.imageContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 1140px) {
+    /* For desktop: */
+    .customers {
+        padding: 90px 0 100px;
+    }
+
+    .imageContainer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .heading {
+        font-size: 40px;
+        line-height: 58px;
+    }
+
+    .img {
+        transition: scale 0.15s ease-in-out;
+    }
+
+    .img:hover {
+        scale: 1.2;
+    }
+}

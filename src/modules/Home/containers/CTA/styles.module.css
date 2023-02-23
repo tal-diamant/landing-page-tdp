@@ -1,0 +1,78 @@
+.cta {
+    background-image: url(/images/grid.svg);
+    display: flex;
+    justify-content: center;
+    padding: 95px 0 100px;
+}
+
+.center {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    background: #000;
+    padding: 80px 15px 50px;
+    width: 100%;
+}
+
+.heading {
+    color: #fff;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0 auto 15px;
+    max-width: 751px;
+    text-align: center;
+}
+
+.support {
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.wrapper a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 280px;
+    height: 75px;
+    border: 0;
+    background: var(--primary-button-color);
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 20px;
+    margin: 0 auto;
+    transition: all .2s;
+}
+
+.wrapper a:hover {
+    background: var(--secondary-button-color);
+}
+
+.wrapper img {
+    margin-left: 15px;
+}
+
+@media only screen and (min-width: 1140px) {
+    /* For desktop: */
+    .cta {
+        padding: 130px 0;
+    }
+
+    .center {
+        padding: 120px 15px 100px;
+    }
+
+    .heading {
+        font-size: 52px;
+        line-height: 60px;
+        margin: 0 auto 30px;
+    }
+}

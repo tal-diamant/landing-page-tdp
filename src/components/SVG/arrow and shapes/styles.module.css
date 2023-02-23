@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .wrapper {
+    position: relative;
+  }
+
+  .svg circle{
+    animation: big-small-big 4s infinite;
+  }
+
+  .svg g {
+    rotate: 45deg;
+    transform-origin: 119px 110px;
+    animation: spin-scale 4s infinite;
+  }
+
+  @keyframes big-small-big {
+    0% {
+      r: 0;
+    }
+
+    25% {
+      r: 14px;
+    }
+
+    50% {
+      r: 6px;
+    }
+
+    75% {
+      r: 12px
+    }
+
+    100% {
+      r: 0;
+    }
+  }
+
+  @keyframes spin-scale {
+    from {
+      scale: 0.2;
+      rotate: 0;
+    }
+    to {
+      scale: 1;
+      rotate: 405deg;
+    }
+  }

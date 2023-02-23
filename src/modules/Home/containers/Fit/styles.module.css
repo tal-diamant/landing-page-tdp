@@ -1,0 +1,97 @@
+.fit {
+    padding: 52px 0 70px;
+    background: #e0eaf3;
+    position: relative;
+}
+
+.center {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.heading {
+    font-size: 30px;
+    line-height: 38px;
+    margin: 0 0 34px;
+    text-align: left;
+}
+
+.chatBubbles {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    /* justify-content: space-between; */
+}
+
+.bubbleWrapLeft {
+    padding-right: 30px;
+}
+
+.bubbleWrapRight {
+    padding-left: 30px;
+}
+
+.bubble {
+    display: block;
+    padding: 16px 20px;
+    background: var(--primary-button-color);
+    max-width: 490px;
+    transition: all .15s ease-in-out;
+
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.bubble:hover {
+    background: black;
+}
+
+.bubbleLeft {
+    border-radius: 35px 35px 35px 0;
+    margin-right: auto;
+}
+
+.bubbleRight {
+    border-radius: 35px 35px 0 35px;
+    margin-left: auto;
+}
+
+@media only screen and (min-width: 1140px) {
+    /* For desktop: */
+    .fit {
+        padding: 90px 0 120px;
+    }
+
+    .heading {
+        font-size: 40px;
+        line-height: 58px;
+        margin: 0 0 77px;
+        text-align: center;
+    }
+
+    .chatBubbles {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 0;
+        row-gap: 60px;
+        column-gap: 40px;
+        justify-content: space-between;
+    }
+
+    .bubble {
+        padding: 20px 30px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .bubbleWrapLeft {
+        padding-right: 0;
+    }
+    
+    .bubbleWrapRight {
+        padding-left: 0;
+    }
+}
