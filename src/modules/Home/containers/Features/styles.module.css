@@ -40,6 +40,22 @@
     margin: 0 auto 20px;
 }
 
+.featuresCol div:nth-child(3) img {
+    animation: spin-scale 3s infinite;
+}
+
+@keyframes spin-scale {
+    50% {
+        rotate: -180deg;
+        scale: 0.5;
+    }
+
+    100% {
+        rotate: -360deg;
+        scale: 1;
+    }
+}
+
 .subHeading {
     font-size: 20px;
     font-weight: 700;

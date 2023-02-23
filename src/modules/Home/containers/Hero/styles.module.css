@@ -65,9 +65,25 @@
     padding: 0;
 }
 
+.people .peopleAnimation:first-child{
+    animation-delay: .45s;
+}
+.people .peopleAnimation:nth-child(2){
+    animation-delay: .1s;
+}
+.people .peopleAnimation:nth-child(3){
+    animation-delay: .35s;
+}
+.people .peopleAnimation:nth-child(4){
+    animation-delay: .25s;
+}
+.people .peopleAnimation:nth-child(5){
+    animation-delay: .6s;
+}
+
 .peopleAnimation {
     animation: shaffle .6s ease-out;
-    animation-delay: .35s;
+    /* animation-delay: .35s; */
     animation-fill-mode: forwards;
     transform: translateY(100%);
 }
@@ -83,7 +99,7 @@
     display: none;
 }
 
-@media only screen and (min-width: 820px) {
+@media only screen and (min-width: 1020px) {
     /* For desktop: */
     .hero {
         padding: 180px 0 0;
@@ -119,6 +135,11 @@
         justify-content: space-between;
         list-style: none;
         padding: 0;
+    }
+
+    .peopleAnimation img{
+        width: 197px;
+        height: 257px;
     }
 
     .mobileHide {

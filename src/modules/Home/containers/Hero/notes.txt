@@ -1,2 +1,0 @@
-need to fix:
-    - people image size need to increase on desktop screens

@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .wrapper {
+    position: relative;
+  }
+  
+  .one {
+    top: 0;
+    left: 0;
+    position: absolute;
+    rotate: 45deg;
+    animation: spin1 6s linear infinite;
+  }
+  
+  .two {
+    top: 0;
+    left: 0;
+    position: absolute;
+    rotate: -45deg;
+    animation: spin2 5s linear infinite;
+  }
+  
+  .mid {
+    rotate: 45deg;
+    /* animation: spin2 30s linear infinite; */
+  }
+  
+  @keyframes spin1 {
+    100% { rotate: 405deg}
+  }
+  @keyframes spin2 {
+    100% { rotate: -405deg}
+  }

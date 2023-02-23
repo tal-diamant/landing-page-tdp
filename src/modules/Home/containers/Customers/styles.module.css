@@ -33,9 +33,18 @@
 
 @media only screen and (min-width: 1140px) {
     /* For desktop: */
+    .customers {
+        padding: 90px 0 100px;
+    }
+
     .imageContainer {
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .heading {
+        font-size: 40px;
+        line-height: 58px;
     }
 
     .img {

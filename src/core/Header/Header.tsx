@@ -58,6 +58,9 @@ export default function Header() {
               </ul>
               <Link href="" className={styles.navAction}>
                 Get started
+                <div className={styles.arrowRight}>
+                  <Image src={"/images/arrow-right-icon.svg"} width={20} height={15} alt="" />
+                </div>
               </Link>
             </nav>
           </div>
@@ -91,6 +94,9 @@ export default function Header() {
             </ul>
             <Link href="" className={styles.navAction}>
               Get started
+              <div className={styles.arrowRight}>
+                <Image src={"/images/arrow-right-icon.svg"} width={20} height={15} alt="" />
+              </div>
             </Link>
           </div>
         </div>

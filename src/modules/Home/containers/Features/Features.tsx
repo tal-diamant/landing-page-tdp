@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Parallax } from 'react-scroll-parallax';
 import AnimateIn from "@/components/AnimateIn/AnimateIn";
+import SpinSquare from "@/components/SVG/spinning squares/SpinSquare";
+import ShapesArrow from "@/components/SVG/arrow and shapes/ShapesArrow";
 import styles from "./styles.module.css";
 
 export default function Features() {
@@ -40,7 +42,7 @@ export default function Features() {
           <div className={styles.featuresCol}>
             <AnimateIn>
             <div className={styles.svg}>
-              <Image src={"/images/feature2.svg"} width={150} height={130} alt="" />
+              <ShapesArrow />
             </div>
             <h4 className={styles.subHeading}>Costs 70% less</h4>
             <p className={styles.support}>
@@ -51,7 +53,7 @@ export default function Features() {
 
             <AnimateIn>
             <div className={styles.svg}>
-              <Image src={"/images/feature.svg"} width={150} height={130} alt="" />
+              <SpinSquare />
             </div>
             <h4 className={styles.subHeading}>Adaptable and scalable</h4>
             <p className={styles.support}>

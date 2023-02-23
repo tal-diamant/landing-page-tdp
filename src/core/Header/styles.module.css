@@ -36,6 +36,7 @@
 }
 
 .navAction {
+    position: relative;
     align-items: center;
     color: var(--primary-text-color);
     display: inline-flex;
@@ -54,6 +55,22 @@
     color: black;
     background: white;
     outline-color: white;
+}
+
+.navAction:hover .arrowRight {
+    background: black;
+}
+
+.arrowRight {
+    background-color: var(--primary-text-color);
+    -webkit-mask: url(/images/arrow-right-icon.svg) no-repeat center;
+    mask: url(/images/arrow-right-icon.svg) no-repeat center;
+    margin-left: 10px;
+    transition: all 0.2s;
+}
+
+.arrowRight img {
+    opacity: 0;
 }
 
 .content {

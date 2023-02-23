@@ -25,7 +25,7 @@ export default function CTA() {
             <AnimateIn>
             <Link href="">
                 Get Started
-                <Image src={"/images/arrow-right-icon.png"} width={20} height={16} alt="" />
+                <Image src={"/images/arrow-right-thick.svg"} width={20} height={16} alt="" />
             </Link>
             </AnimateIn>
           </div>

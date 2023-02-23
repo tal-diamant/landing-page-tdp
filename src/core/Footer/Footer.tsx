@@ -73,7 +73,7 @@ export default function Footer() {
               <Link href="">
                 <span>contact us</span>
                 <Image
-                  src={"/images/arrow-right-icon.png"}
+                  src={"/images/arrow-right-thick.svg"}
                   width={23}
                   height={20}
                   alt=""
@@ -110,7 +110,7 @@ export default function Footer() {
               <Link href="">
                 <span>contact us</span>
                 <Image
-                  src={"/images/arrow-right-icon.png"}
+                  src={"/images/arrow-right-thick.svg"}
                   width={23}
                   height={20}
                   alt=""
